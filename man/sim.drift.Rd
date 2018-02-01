@@ -13,18 +13,18 @@ sim.drift(n.pop,n,freq,n.gen,n.gene,n.time,s.plot,s.table)
 
 \item{freq}{initial frequency of allele (0-1)}
 
-\item{n.gen}{Number of generations to simulate}
+\item{n.gen}{Number of generations to simulate Default:100}
 
 \item{n.gene}{Number of genes/loci tested}
 
 \item{n.time}{Number of simulations to perform}
 
-\item{s.plot}{Save the image of plot? (TRUE/FALSE)}
+\item{s.plot}{Save the image of plot? (TRUE/FALSE) Default:FALSE}
 
-\item{s, table}{Save the table of numerical valuest? (TRUE/FALSE)}
+\item{s, table}{Save the table of numerical valuest? (TRUE/FALSE) Default:FALSE}
 }
 \value{
-Plots and Graphs are saved to working directory
+Frequency Plots. If save is true, image and tabel text file are saved in working dierctory.
 }
 \description{
 This function allows you to simulate the change in allelic frequencies due to random drift in a Wright-Fisher model
