@@ -1,0 +1,10 @@
+Package: drift
+Title: Monte-Carlo Random Drift
+Version: 0.1
+Authors@R: person("Anuj", "Sharma", email="anujsharma@ufl.edu", role = c("aut","cre","cph"))
+Description: Simulate changes in allelic frequency by Random drift. This package generates graphs and tables for frequency change according to input parameters using Monte-Carlo method. 
+Depends: R (>= 3.0.0)
+License: GPL2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
