@@ -21,7 +21,7 @@ sim.drift(n.pop,n,freq,n.gen,n.gene,n.time,s.plot,s.table)
 
 \item{s.plot}{Save the image of plot? (TRUE/FALSE) Default:FALSE}
 
-\item{s, table}{Save the table of numerical valuest? (TRUE/FALSE) Default:FALSE}
+\item{s.table}{Save the table of numerical valuest? (TRUE/FALSE) Default:FALSE}
 }
 \value{
 Frequency Plots. If save is true, image and tabel text file are saved in working dierctory.
