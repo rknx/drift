@@ -17,14 +17,15 @@
 #' sim.drift(30,2,0.25,100,10,3,TRUE,FALSE)
 #' sim.drift(30,2,0.25,100,10,3)
 
-#Libraries
-if("ggplot2" %in% rownames(installed.packages()) == FALSE) {install.packages("ggplot2")}
-if("reshape2" %in% rownames(installed.packages()) == FALSE) {install.packages("reshape2")}
-library(ggplot2)                        # For plotting graph
-library(reshape2)                        # For refrshing the plot for new simulations
-
 # Monte-carlo function
 sim.drift <- function (n.pop, n=1, freq, n.gen=100, n.gene, n.time, s.plot=FALSE, s.table=FALSE) {
+
+  #Libraries
+  if("ggplot2" %in% rownames(installed.packages()) == FALSE) {install.packages("ggplot2")}
+  if("reshape2" %in% rownames(installed.packages()) == FALSE) {install.packages("reshape2")}
+  library(ggplot2)                        # For plotting graph
+  library(reshape2)                        # For refrshing the plot for new simulations
+	
   n.pop <- n.pop * n									# Adjust allele count for diploid
   timestamp <- floor(as.numeric(Sys.time()))			# Unique timestmamp for the files
   
