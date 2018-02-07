@@ -1,4 +1,3 @@
-
 #' Simulate Genetic Drift
 #' 
 #' This function allows you to simulate the change in allelic frequencies due to random drift in a Wright-Fisher model
@@ -48,8 +47,13 @@ sim.drift <- function (n.pop=25, n=1, freq=0.5, n.gen=100, n.loci=1, n.time=1, s
     print(ggplot(melt(X), aes(x = rep(c(1:n.gen), n.loci), y = value, colour = variable)) + geom_line() + labs(title = "Simulations of Genetic Drift", x="Generation", y="Allele Frequency") + ylim(0,1) + theme(legend.position = "none"))
 														# Plotting
     # Saving the files
-    if (s.table == TRUE) {write.table(round(X,digits=3), file=paste0("Genetic Drift Simulation ",timestamp,"-",k,".txt"), sep="\t")}   # Optional, save CSV
-    if (s.plot == TRUE) {ggsave(paste0("Genetic Drift Simulation ",timestamp,"-",k,".png"), type="cairo-png")}        # Optional, save graph
+    if (s.table == TRUE) {       # Optional, save table
+	    write.table(round(X,digits=3), file=paste0("Genetic Drift Simulation ",timestamp,"-",k,".txt"), sep="\t")
+	    print(paste0("Table saved as: Genetic Drift Simulation ",timestamp,"-",k,".txt"))
+    }
+    if (s.plot == TRUE) {        # Optional, save graph
+	    ggsave(paste0("Genetic Drift Simulation ",timestamp,"-",k,".png"), type="cairo-png")
+	    print(paste0("Image saved as: Genetic Drift Simulation ",timestamp,"-",k,".png"))
+    }
   }
-  print(paste0("The timestamp is: ",timestamp))
 }
