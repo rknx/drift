@@ -8,7 +8,7 @@
 #' @param n.loci Number of genes/loci tested Default:1
 #' @param n.time Number of simulations to perform Default:1
 #' @param s.plot Save the image of plot? (TRUE/FALSE) Default:FALSE
-#' @param s,table Save the table of numerical valuest? (TRUE/FALSE) Default:FALSE
+#' @param s.table Save value table as tab delimited file? (TRUE/FALSE) Default:FALSE
 #' @return Frequency Plots. If save is true, image and tabel text file are saved in working dierctory.
 #' @usage sim.drift(n.pop,n,freq,n.gen,n.loci,n.time,s.plot,s.table)
 #' @name sim.drift
