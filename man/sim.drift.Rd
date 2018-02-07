@@ -4,7 +4,7 @@
 \alias{sim.drift}
 \title{Simulate Genetic Drift}
 \usage{
-sim.drift(n.pop,n,freq,n.gen,n.gene,n.time,s.plot,s.table)
+sim.drift(n.pop,n,freq,n.gen,n.loci,n.time,s.plot,s.table)
 }
 \arguments{
 \item{n.pop}{Number of effective population}
@@ -15,7 +15,7 @@ sim.drift(n.pop,n,freq,n.gen,n.gene,n.time,s.plot,s.table)
 
 \item{n.gen}{Number of generations to simulate Default:100}
 
-\item{n.gene}{Number of genes/loci tested}
+\item{n.loci}{Number of genes/loci tested}
 
 \item{n.time}{Number of simulations to perform}
 
