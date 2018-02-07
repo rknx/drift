@@ -44,7 +44,7 @@ sim.drift <- function (n.pop=25, n=1, freq=0.5, n.gen=100, n.loci=1, n.time=1, s
     # Change table format and plot it
     X <- data.frame(X/n.pop)							# Normalize the dataframe
     colnames(X) = paste0("Line",1:n.loci)
-    print(ggplot(melt(X), aes(x = rep(c(1:n.gen), n.loci), y = value, colour = variable)) + geom_line() + labs(title = "Simulations of Genetic Drift", x="Generation", y="Allele Frequency") + ylim(0,1) + theme(legend.position = "none"))
+    print(ggplot(suppressMessages(melt(X)), aes(x = rep(c(1:n.gen), n.loci), y = value, colour = variable)) + geom_line() + labs(title = "Simulations of Genetic Drift", x="Generation", y="Allele Frequency") + ylim(0,1) + theme(legend.position = "none"))
 														# Plotting
     # Saving the files
     if (s.table == TRUE) {       # Optional, save table
