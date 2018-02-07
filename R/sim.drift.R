@@ -1,12 +1,13 @@
+
 #' Simulate Genetic Drift
 #' 
 #' This function allows you to simulate the change in allelic frequencies due to random drift in a Wright-Fisher model
-#' @param n.pop Number of effective population
-#' @param n Ploidy: Haploid=1, Diploid=2...
-#' @param freq initial frequency of allele (0-1)
+#' @param n.pop Number of effective population Default:25
+#' @param n Ploidy: Haploid=1, Diploid=2... Default:1
+#' @param freq initial frequency of allele (0-1) Default:0.5
 #' @param n.gen Number of generations to simulate Default:100
-#' @param n.loci Number of genes/loci tested
-#' @param n.time Number of simulations to perform
+#' @param n.loci Number of genes/loci tested Default:1
+#' @param n.time Number of simulations to perform Default:1
 #' @param s.plot Save the image of plot? (TRUE/FALSE) Default:FALSE
 #' @param s,table Save the table of numerical valuest? (TRUE/FALSE) Default:FALSE
 #' @return Frequency Plots. If save is true, image and tabel text file are saved in working dierctory.
@@ -15,7 +16,9 @@
 #' @export
 #' @examples
 #' sim.drift(30,2,0.25,100,10,3,TRUE,FALSE)
-#' sim.drift(30,2,0.25,100,10,3)
+#' sim.drift(75,1,0.5,250,8)
+#' sim.drift(n.pop=25, n=2, freq=0.01, n.gen=50, n.loci=5, n.time=1, s.plot=TRUE, s.table=TRUE)
+#' sim.drift()
 
 # Monte-carlo function
 sim.drift <- function (n.pop=25, n=1, freq=0.5, n.gen=100, n.loci=1, n.time=1, s.plot=FALSE, s.table=FALSE) {
