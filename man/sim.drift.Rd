@@ -7,21 +7,21 @@
 sim.drift(n.pop,n,freq,n.gen,n.loci,n.time,s.plot,s.table)
 }
 \arguments{
-\item{n.pop}{Number of effective population Default:25}
+\item{n.pop}{Number of effective population [Default:25]}
 
-\item{n}{Ploidy: Haploid=1, Diploid=2... Default:1}
+\item{n}{Ploidy: Haploid=1, Diploid=2... [Default:1]}
 
-\item{freq}{initial frequency of allele (0-1) Default:0.5}
+\item{freq}{initial frequency of allele (0-1) [Default:0.5]}
 
-\item{n.gen}{Number of generations to simulate Default:100}
+\item{n.gen}{Number of generations to simulate [Default:100]}
 
-\item{n.loci}{Number of genes/loci tested Default:1}
+\item{n.loci}{Number of genes/loci tested [Default:1]}
 
-\item{n.time}{Number of simulations to perform Default:1}
+\item{n.time}{Number of simulations to perform [Default:1]}
 
-\item{s.plot}{Save the image of plot? (TRUE/FALSE) Default:FALSE}
+\item{s.plot}{Save the image of plot? (TRUE/FALSE) [Default:FALSE]}
 
-\item{s.table}{Save value table as tab delimited file? (TRUE/FALSE) Default:FALSE}
+\item{s.table}{Save value table as tab delimited file? (TRUE/FALSE) [Default:FALSE]}
 }
 \value{
 Frequency Plots. If save is true, image and tabel text file are saved in working dierctory.
